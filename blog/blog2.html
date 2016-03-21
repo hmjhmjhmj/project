@@ -1,0 +1,1374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/common.css">
+	<style type="text/css">
+	body{
+		background: url("images/body_bg.jpg");
+	}
+	.wrap{
+		width: 947px;
+		padding-left: 9px;
+		padding-right: 6px;
+		background: url("images/main_bg.jpg") 0 0 repeat-y;
+		margin: 0 auto;
+	}
+	.head{
+		background: url("images/head_bg.jpg") 0 0 repeat-x;
+		overflow: hidden;
+		zoom: 1;
+	}
+	.head_left{
+		display: inline;
+		float: left;
+	}
+	.head_left img{
+		display: inline;
+		float: left;
+	}
+	.head_right{
+		display: inline;
+		float: right;
+		width: 607px;
+		padding-top: 6px;
+	}
+	.nav_wrap{
+		zoom: 1;
+		overflow: hidden;
+	}
+	.nav{
+		display: inherit;
+		float: right;
+		height: 28px;
+		background: #ff9935 url("images/nav_bg.jpg") 0 0 no-repeat;
+		padding-left: 58px;
+	}
+	.nav a{
+		color: black;
+		font-weight: bold;
+		font-size: 14px;
+		text-decoration: none;
+		line-height: 28px;
+		padding:0 8px;
+	}
+	.banner{
+		margin-top: 23px;
+	}
+	.banner{
+		background-color: #fff;
+		/*overflow: hidden;*/
+		height: 98px;
+		width: 462px;
+		opacity: 0.3;
+		filter:alpha(opacity=30);
+		border: 3px solid #fff;
+		border-radius: 3px;
+		
+		
+	}
+	.head_right{
+		position: relative;
+
+	}
+	.banner_main p{
+		font-weight: bold;
+		font-size: 34px;
+		left:12px;
+		top:62px;
+		color: #814456;
+		position: absolute;
+	}
+	.banner_main span{
+		font-size: 12px;
+		left: 18px;
+		top: 118px;
+		color: #814456;
+		position: absolute;
+	}
+	.main{
+		/*height: 1352px;*/
+		background: url(images/main_bg2.jpg) 0 0 repeat-x;
+		padding: 10px 10px 18px 7px;
+		overflow: hidden;
+		zoom: 1;/*触发haslyout*/
+	}
+	.main_l{
+		display: inline;
+		overflow: hidden;
+		width: 227px;
+		float: left;
+	}
+	.expert{
+		width: 228px;
+	}
+	.expert_main{
+		width: 228px;
+		padding: 9px 8px 5px 10px;
+	}
+	.expert_portrait{
+		padding-left: 4px;
+		padding-right: 5px;
+	}
+	.expert_portrait img{
+		border-width: 6px 21px 6px 18px;
+		border-color: white;
+		border-style: solid;
+	}
+	.expert_links{
+		margin-top: 8px;
+	}
+	.expert_links a{
+		display: inline-block;
+		width: 66px;
+		height: 24px;
+		background:url("images/common_links.jpg") 0 0 no-repeat;
+		text-align: center;
+		line-height: 24px;
+		color: black;
+		font-size: 12px;
+	}
+	.expert_links_c{
+		margin: 0 6px 0 5px;
+	}
+	.expert_links_col{
+		margin-top: 6px;
+	}
+	.expert_links a:hover{
+		background-position: 0 -24px;
+		color: #b11e24;
+	}
+	.music_links{
+		padding-left: 8px;
+		overflow: hidden;
+		text-decoration: none;
+		
+	}
+	.music_links a{
+		background: url(images/common_music_links.jpg) 0 0 no-repeat;
+		text-decoration: none;
+		display: inline-block;
+		width: 66px;
+		height: 23px;
+		text-align: center;
+		line-height: 23px;
+		color: black;
+		font-size: 12px;
+	}
+	.music_links_c{
+		text-decoration: none;
+		margin: 0 5px 0 5px;
+	}
+	.music_links a:hover{
+		text-decoration: none;
+		background-position: 0 -23px;
+	}
+	.musicbox{
+
+		zoom:1;
+		padding-top: 14px;
+	}
+	.music_main{
+		width: 227px;
+	}
+	.song li{
+		overflow: hidden;
+		position: relative;
+		line-height: 26px;
+		font-size: 12px;
+		border-bottom: 1px dashed black;
+	}
+	.song{
+		
+		overflow: hidden;
+		padding-right:24px;
+		padding-left: 18px;
+		margin-top: 12px;
+	}
+	.song li a{
+		font-size: 12px;
+		color: black;
+	}
+	.song li a:hover{
+		color: #b51e25;
+	}
+	.all a:hover{
+		font-weight: bold;
+		text-decoration: underline;
+		color: #b51e25;
+
+	}
+	.all a{
+		
+		padding-left: 160px;
+		color: black;
+	}
+	.all{
+		padding-bottom: 8px;
+		margin-top: 10px;
+		width: 277px;
+		height: 12px;
+	}
+	.song img{
+		position: absolute;
+		left: 170px;
+		top: 8px;
+		_top: 6px;
+	}
+	.company_links{
+		text-align: center;
+		padding-top:5px;
+		padding-left: 10px;
+		padding-bottom:20px;
+	}
+	.company_links a{
+		float: left;
+		text-decoration: none;
+		display: inline-block;
+		width: 54px;
+		height: 24px;
+		background:url("images/1.jpg") 0 0 no-repeat;
+		text-align: center;
+		line-height: 24px;
+		color: black;
+		font-size: 12px;
+		padding-right: 
+	}
+	#company_links_c{
+		background:url("images/2.jpg") 0 0 no-repeat;
+		display: inline;
+		padding-right: 10px;
+		float: right;
+	}
+	#company_links_c:hover{
+		display: inline;
+		text-decoration: none;
+		background-position: 0 -24px;
+
+	}
+
+	
+	.company_links a:hover{
+		overflow: hidden;
+		display: inline;
+		text-decoration: none;
+		background-position: 0 -24px;
+	}
+	.company{
+		height: 338px;	
+		zoom:1;
+		margin-top: 14px;
+	}
+	.company_portrait{
+		display: inline;
+		height: 210px;
+		overflow: hidden;
+		padding-left: 4px;
+		padding-right: 5px;
+	}
+	.company_portrait img{
+		border-width: 6px 21px 6px 18px;
+		border-color: white;
+		border-style: solid;
+	}
+	.company_main{
+
+		overflow: hidden;
+		padding: 9px 8px 5px 10px;
+	}
+	.company span{
+		overflow: hidden;
+		color: #b11e24;
+		font-size: 14px;
+		display: inline-block;
+		line-height: 24px;
+		text-align: center;
+		height: 24px;
+		float: left;
+		padding-left: 30px;
+	}
+	.company span{
+		display: inline;
+	}
+
+
+
+	.data_links{
+		padding: 0 10px;
+	}
+
+	th{
+		font-size: 12px;
+		font-weight: bold;
+		color: #b52024;
+	}
+	.tab a{
+		font-size: 12px;
+		color: black;
+
+	}
+	.tab tr td a:hover{
+		color: white;
+		background-image: url(images/tab_a.jpg);
+
+	}
+	.bot a:hover{
+		font-weight: bold;
+		color: #b22023;
+	}
+	.bot{
+		padding: 1px 10px 5px 32px;
+	}
+	.bot a{
+
+		padding-left: 10px;
+		padding-right: 32px;
+		text-align: center;
+		line-height: 12px;
+		height: 12px;
+	}
+	.tab{
+		width: 194px;
+		margin: 0 auto;
+		border: 6px solid #feb974;
+		border-top: 0px;
+		border-radius: 6px;
+	}
+	tr td{
+		text-align: center;
+		line-height: 10px;
+	}
+	table{
+		margin: 0 auto;
+	}
+
+
+	.main_c{
+		display: inline;
+		width: 453px;
+		float: left;
+		margin-left: 11px;
+		overflow: hidden;
+		/*display:inline-block;*/
+
+	}
+	.video_main{
+		width: 453px;
+		margin: 0 auto;
+		height: 218px;
+		background-color: #ffd3a6;
+	}
+	.video{
+		zoom:1;
+		display: inline;
+	}
+	.video_main_t{
+		padding-top: 8px;
+		padding-left: 5px;
+		width: 453px;
+	}
+	.video_portrait{
+		display: inline;
+		height: 218px;
+		margin: 0 auto;
+		padding: 7px 12px 14px;
+	}
+	.video_portrait a{
+		height: 204px;
+		width: 142px;
+		display: inline-block;
+		font-size: 12px;
+		text-decoration: none;
+		color: black;
+		border-radius: 4px;
+		margin: 0 0px;
+		text-align: center;
+	}
+	.video_portrait a:hover{
+		zoom:1;
+		background-color: #ff9935;
+	}
+	.video_portrait img{
+		margin-top: 8px;
+		border: 3px solid white;
+		border-radius: 3px;
+	}
+	.video_portrait span{
+		text-align: center;
+		font-size: 14px;
+		display: inline-block;
+		margin-top: 8px;
+		margin-bottom: 13px;
+	}
+	.video_portrait em{
+		display: block;
+		width: 66px;
+		height: 24px;
+		margin: 0 auto;
+		background: url("images/btns.jpg") 0 0 no-repeat;
+	}
+	.video_portrait a:hover em{
+		background-position: 0 -24px;
+	}
+	.video{
+		display: inline;
+	}
+	.words{
+		zoom:1;
+		padding-top: 12px;
+	}
+	.wrods_main{
+		overflow: hidden;
+		background-color: #ffd3a6;
+		height: 178px;
+	}
+	.span{
+		overflow: hidden;
+		display: inline-block;
+	}
+	.words_main_song p{
+		
+		overflow: hidden;
+		font-size: 12px;
+		line-height: 20px;
+		text-align: left;
+
+	}
+	.words_main_song {
+		overflow: hidden;
+		display: inline;
+		padding-left: 24px;
+	}
+	.words_main_song em{
+		padding-top: 0px;
+		padding-right: 10px;
+		color: #b52026;
+		font-size: 12px;
+		padding-left: 100px;
+		_padding-left: 120px;
+	}
+	.words_main_song{
+		overflow: hidden;
+		width: 220px;
+		float: left;
+		border-right: 1px solid #fcb66e;
+	}
+	.words_main_song1{
+		overflow: hidden;
+		float: right;
+	}
+	.words_main_song1 p{
+		overflow: hidden;
+		line-height: 20px;
+		text-align: left;
+
+	}
+	.words_main_song span{
+		overflow: hidden;
+		line-height: 30px;
+	}
+	.words_main_song1 p{
+		font-size: 12px;
+		overflow: hidden;
+		padding-right: 30px;
+		
+	}
+	.words_main_song1{
+	}
+	.words_main_song1 em{
+		line-height: 30px;
+		color: #b52026;
+		font-size: 12px;
+		padding-left: 40px;
+		_padding-left: 65px;
+	}
+	.words_main_song1 span{
+		line-height: 30px;
+	}
+	.photo_main{
+		width: 453px;
+		margin: 0 auto;
+		height: 218px;
+		background-color: #ffd3a6;
+	}
+	.photo{
+		margin-top: 14px;
+		zoom:1;
+	}
+	.photo_main_t{
+		padding-top: 8px;
+		padding-left: 5px;
+		width: 453px;
+	}
+	.photo_portrait{
+		display: inline;
+		height: 218px;
+		margin: 0 auto;
+		padding: 7px 12px 14px;
+	}
+	.photo_portrait a{
+		height: 204px;
+		width: 142px;
+		display: inline-block;
+		font-size: 12px;
+		text-decoration: none;
+		color: black;
+		border-radius: 4px;
+		margin: 0 0px;
+		text-align: center;
+	}
+	.photo_portrait a:hover{
+		zoom:1;
+		background-color: #ff9935;
+	}
+	.photo_portrait img{
+		margin-top: 8px;
+		border: 3px solid white;
+		border-radius: 3px;
+	}
+	.photo_portrait span{
+		text-align: center;
+		font-size: 14px;
+		display: inline-block;
+		margin-top: 8px;
+		margin-bottom: 13px;
+	}
+	.photo_portrait em{
+		display: block;
+		width: 66px;
+		height: 24px;
+		margin: 0 auto;
+		background: url("images/btns.jpg") 0 0 no-repeat;
+	}
+	.photo_portrait a:hover em{
+		background-position: 0 -24px;
+	}
+
+	.diary_main ul,ol{
+		list-style: none;
+	}
+	.diary_main{
+		width: 453px;
+		margin: 0 auto;
+		background-color: #ffd3a6;
+		height: 244px;
+	}
+	.title{
+		background-color: #ffc48a;
+	}
+
+	.diary_main li span,.diary_main .title span{
+		display: inline-block;
+		font-size: 12px;
+		line-height: 24px;
+		height: 24px;
+		text-align: center;
+		overflow: hidden;
+	}
+	.v1{
+		width: 40%;
+	}
+	.diary_main li span.v1{
+		text-align: left;
+	}
+	.v2{
+		width: 30%;
+	}
+	.v3{
+		width: 30%;
+	}
+	.diary_main ul,.diary_main .title{
+		padding: 0 18px;
+	}
+	.diary_main li{
+		border-bottom: 1px dashed black;
+	}
+	.diary1{
+		margin-top: 14px;
+	}
+
+
+
+	.main_r{
+		display:inline;
+		width: 227px;
+		float: right;
+		height: 500px;
+	}
+	.visit_main{
+
+		display: inline;
+		overflow: hidden;
+		background-color: #ffd2a8;
+		height: 140px;
+		display: block;
+	}
+	.visit_main_m{
+		
+		margin-top: 6px;
+		margin-left: 16px;
+		height: 140px;
+		width: 210px;
+		/*background: #ffd2a8 url(images/visit_main.jpg) 0 0 no-repeat;*/
+
+	}
+	.visit_main_m p{
+		font-size: 14px;
+		font-weight: bold;
+		color: #b51f28;
+		line-height: 20px;
+		padding-left: 20px;
+		padding-top: 5px;
+
+	}
+	.visit_main_m span{
+		font-weight: normal;
+		color: #000;
+		padding-left: 50px;
+	}
+	.visit_bg{
+		position: relative;
+		width: 162px;
+		margin: 0 auto;
+		border-bottom: 1px dashed black;
+	}
+	.visit_bg img{
+		left: 0px;
+		top: 7px;
+		position: absolute;
+	}
+
+	.message_main{
+		padding-top: 14px;
+		display: inline;
+		overflow: hidden;
+		background-color: #ffd2a8;
+		height: 200px;
+		display: block;
+	}
+	.message_main_m{
+		font-size: 12px;
+		display: inline-block;
+		margin-left: 10px;
+		height: 220px;
+		width: 208px;
+
+	}
+	.message_main_m p{
+		background: url("images/message_bg.jpg") left 0 no-repeat;
+		text-align: left;
+		line-height: 20px;
+		font-size: 12px;
+		padding-right: 2px;
+		font-size: 12px;
+
+	}
+	.under1 span{
+		text-decoration: underline ;
+		font-size: 12px;
+		text-decoration-color:red;
+		font-weight: bold;
+		color: #b51f28;
+	}
+	.under1 em{
+		font-size: 12px;
+		font-weight: bold;
+		color: black;
+	}
+	.under span{
+		/*text-decoration: underline ;*/
+		font-size: 12px;
+		/*text-decoration-color:red;*/
+		font-weight: bold;
+		color: #b51f28;
+	}
+	.under em{
+		font-size: 12px;
+		font-weight: bold;
+		color: black;
+	}
+	.under a{
+		font-size: 12px;
+		display: inline;
+		line-height: 24px;
+		color: black;
+		text-decoration:none;
+		display: block;
+		margin-left: 15px;
+
+	}
+	
+	.under1 a{
+		font-size: 12px;
+		/*padding-top: -10px;*/
+		display: inline;
+		line-height: 24px;
+		color: black;
+		text-decoration: underline;
+		display: block;
+		margin-left: 15px;
+
+	}
+
+	.message_main_m a{
+
+	
+	}
+
+
+
+	.message{
+		margin-top: 14px;
+	}
+
+	.friend{
+		/*zoom:1;*/
+		margin-top: 14px;
+	}
+	.friend_main{
+		/*zoom:1;*/
+		background-color: #ffd3a6;
+		height: 348px;
+		
+	}
+	.friend_main_m a{
+		/*zoom:1;*/
+		padding-left: 20px;
+		height: 84px;
+		display: block;
+
+	}
+	.friend_main_m{
+		/*zoom:1;*/
+	}
+	.friend_main_m a:hover{
+		/*zoom:1;*/
+		background-color: #ff9935;
+	}
+	.friend_main_m_1 img{
+		float: left;
+		border: 3px solid white;
+		border-radius: 3px;
+		margin-top: 10px;
+	}
+	.friend_main_m_1{
+		/*zoom:1;*/
+		width: 226px;
+		height: 84px;
+		border-bottom: 1px solid #ff9934;
+	}
+	.friend_main_m_1 p{
+		zoom:1;
+		font-weight: bold;
+		padding-right: 50px;
+		padding-top: 18px;
+		display: block;
+		text-align: right;
+		color: #b51e25;
+	}
+	.friend_main_m_1 span{
+		zoom:1;
+		padding-right: 40px;
+		_padding-right: 52px;
+		padding-top: 10px;
+		display: block;
+		font-size: 12px;
+		text-align: right;
+		color: black;
+	}
+	.friend_main_m_1 em{
+		zoom:1;
+		padding-top: 10px;
+		display: block;
+		font-size: 12px;
+		text-align: right;
+		color: black;
+		padding-right: 24px;
+		_padding-right: 40px;
+
+	}
+	.friend_main_1{
+		zoom:1;
+	}
+	.idol_links{
+		/*overflow: hidden;*/
+		padding-right: 10px;
+		padding-left: 20px;
+		padding-top: 4px;
+		padding-bottom:24px;
+		text-align: center;
+	}
+	.idol_links a{
+		display: inline;
+		overflow: hidden;
+		display: inline;
+		float: left;
+		text-decoration: none;
+		display: inline-block;
+		width: 54px;
+		height: 24px;
+		background:url("images/1.jpg") 0 0 no-repeat;
+		text-align: center;
+		line-height: 24px;
+		color: black;
+		font-size: 12px;
+	}
+	#idol_links_c{
+		background:url(images/2.jpg) 0 0 no-repeat;
+		padding-right: 10px;
+		float: right;
+	}
+	#idol_links_c:hover{
+		background-position: 0 -24px;
+	}
+	.idol_links a:hover{
+		background-position: 0 -24px;
+	}
+	.idol{
+		zoom:1;
+		margin-top: 14px;
+	}
+	.idol_portrait{
+		/*height: 200px;*/
+		padding-left:13px;
+		padding-top:20px;
+	}
+	.idol_portrait img{
+		border-width: 6px 20px 6px 20px;
+		border-color: white;
+		border-style: solid;
+	}
+	.idol span{
+		padding-left: 26px;
+		float: left;
+		color: #b11e24;
+		display: inline-block;
+		line-height: 24px;
+		text-align: center;
+		height: 24px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	.footer{
+		overflow: hidden;
+		height: 86px;
+		background: url(images/footer.jpg) 0 0 repeat-x;
+	}
+	.foot{
+		width: 710px;
+		margin: 0 auto;
+		height: 86px;
+
+	}
+	.foot a{
+		font-size: 14px;
+		font-weight: bold;
+		color: #811218;
+		line-height: 86px;
+		text-align: center;
+	}
+	 .tab caption{
+	 	font-weight: bold;
+		color: #b41f23;
+		text-align: center;
+		margin-top: 10px;
+	}
+
+
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="head">
+			<div class="head_left"><img src="images/logo.jpg" alt=""></div>
+			<div class="head_right">
+				<div class="nav_wrap">
+					<div class="nav">
+						<a href="###">首页</a><span>|</span><a href="###">会员中心</a><span>|</span><a href="###">登陆</a><span>|</span><a href="###">注册</a>
+					</div>
+				</div>
+				<div class="banner">
+					
+					
+				</div>
+				<div class="banner_main">	
+				<p >XXX的个人星空间</p>
+				<span>个人空间介绍，总是希望着，总是泯灭着。。。。</span>	
+				</div>
+			</div>
+		</div>
+		<div class="main">
+			<div class="main_l">
+				<div class="expert">
+					<div class="common_head">
+						<div class="common_head_left">
+							<div class="common_head_right">
+								<h2><a href="###">音乐达人</a></h2>
+
+								
+							</div>
+						</div>
+					</div>
+					<div class="common_main expert_main ">
+						<div class="expert_portrait">
+							<img src="images/portrait.jpg" alt="">
+						</div>
+						<div class="expert_links">
+							<div>
+								<a href="###">个人链接</a><a href="###" class="expert_links_c">交友资料</a><a href="###">加为好友</a>
+							</div>
+							<div class="expert_links_col"> 
+								<a href="###">投他一票</a><a href="###" class="expert_links_c">给他留言</a><a href="###">送她卡片</a>
+							</div>
+						</div>
+					</div>
+					<div class="common_footer">
+						<div class="common_footer_right"></div>
+					</div>
+				</div>
+				<div class="musicbox">
+					<div class="common_head">
+						<div class="common_head_left">
+							<div class="common_head_right">
+								<h2><a href="###">音乐盒</a></h2>
+								<a href="###" class="more">more</a>
+
+							</div>
+						</div>
+					</div>
+					<div class="common_main music_main ">
+						<div class="music_links">
+							<div>
+								<a href="###">歌单一</a><a href="###" class="expert_links_c">歌单二</a><a href="###">歌单三</a>
+							</div>
+						</div>
+						<div class="music_portrait">
+							<div class="song">
+								<ul>
+									<li><a href="#">1、有没有人告诉你&nbsp-&nbsp陈楚生<img src="images/music_logo.jpg" alt=""></a></li>
+									<li><a href="#">2、改变自己&nbsp-&nbsp王力宏<img src="images/music_logo.jpg" alt=""></a></li>
+									<li><a href="#">3、还不是因为爱&nbsp-&nbsp苏醒<img src="images/music_logo.jpg" alt=""></a></li>
+									<li><a href="#">4、西界&nbsp-&nbsp林俊杰<img src="images/music_logo.jpg" alt=""></a></li>
+									<li><a href="#">5、我们的歌&nbsp-&nbsp王力宏<img src="images/music_logo.jpg" alt=""></a></li>
+									<li><a href="#">6、如果你也听说&nbsp-&nbsp张惠妹<img src="images/music_logo.jpg" alt=""></a></li>
+									<li><a href="#">7、热浪&nbsp-&nbsp温岚<img src="images/music_logo.jpg" alt=""></a></li>
+									<li><a href="#">8、少年游&nbsp-魏晨&nbsp-快乐男声<img src="images/music_logo.jpg" alt=""></a></li>
+								</ul>
+
+							</div>
+							<div class="all">
+								<a href="#">试听全部</a>
+							</div>
+						</div>	
+						<div class="common_footer">
+							<div class="common_footer_right"></div>
+						</div>
+				</div>
+
+				<div class="company">
+					<div class="common_head">
+						<div class="common_head_left">
+							<div class="common_head_right">
+								<h2><a href="###">经纪公司</a></h2>
+								<a href="###" class="more">more</a>
+
+
+								
+							</div>
+						</div>
+					</div>
+					<div class="common_main company_main ">
+						<div class="company_portrait">
+							<img src="images/portrait.jpg" alt="">
+						</div>
+						<div class="company_links">
+							<div><a href="#"><em>&nbsp</em></a><span>阿姨</span><a href="#" id="company_links_c"><em>&nbsp</em></a>
+							</div>
+						</div>
+					</div>
+					<div class="common_footer">
+						<div class="common_footer_right"></div>
+					</div>
+				</div>
+				<div class="data">
+					<div class="common_head">
+						<div class="common_head_left">
+							<div class="common_head_right">
+								<h2><a href="###">日历</a></h2>
+								<a href="###" class="more">more</a>
+
+							</div>
+						</div>
+					</div>
+					<div class="common_main data_links">
+						<div class="tab">
+						<table cellpadding="9px;" cellspacing="12px;">
+							<caption>JANUARY 2007</caption>
+							<tr>
+								<th>A</th>
+								<th>T</th>
+								<th>W</th>
+								<th>T</th>
+								<th>F</th>
+								<th>S</th>
+								<th>S</th>
+							</tr>
+							<tr>
+								<td><a href="#">1</a></td>
+								<td><a href="#">2</a></td>
+								<td><a href="#">3</a></td>
+								<td><a href="#">4</a></td>
+								<td><a href="#">5</a></td>
+								<td><a href="#">6</a></td>
+								<td><a href="#">7</a></td>
+							</tr>
+							<tr>
+								<td><a href="#">8</a></td>
+								<td><a href="#">9</a></td>
+								<td><a href="#">10</a></td>
+								<td><a href="#">11</a></td>
+								<td><a href="#">12</a></td>
+								<td><a href="#">13</a></td>
+								<td><a href="#">14</a></td>
+							</tr>
+							<tr>
+								<td><a href="#">15</a></td>
+								<td><a href="#">16</a></td>
+								<td><a href="#">17</a></td>
+								<td><a href="#">18</a></td>
+								<td><a href="#">19</a></td>
+								<td><a href="#">20</a></td>						
+								<td><a href="#">21</a></td>
+							</tr>
+							<tr>
+								<td><a href="#">22</a></td>
+								<td><a href="#">23</a></td>
+								<td><a href="#">24</a></td>
+								<td><a href="#">25</a></td>
+								<td><a href="#">26</a></td>
+								<td><a href="#">27</a></td>
+								<td><a href="#">28</a></td>
+							</tr>
+							<tr>
+								<td><a href="#">29</a></td>
+								<td><a href="#">30</a></td>
+								<td><a href="#">31</a></td>
+							</tr>
+
+							
+						</table>
+
+							<div class="bot">
+								<a href="#" class="bot1">&ltDEC</a>
+								<a href="#" class="bot2">FVB&gt</a>
+							</div>
+						</div>
+					</div>
+					<div class="common_footer">
+						<div class="common_footer_right"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+				<div class="main_c">
+				<div class="video">
+					<div class="common_head">
+						<div class="common_head_left">
+							<div class="common_head_right">
+								<h2><a href="###">视频</a></h2>
+								<a href="#" class="more_">more</a>	
+							</div>
+						</div>
+					</div>
+					<div class="video_main">
+						<div class="video_main_t">
+							<div class=" common_mian video_portrait">
+								<a href="#"><img src="images/video1.jpg" alt=""><span>爱的初体验&nbsp223票</span><em>&nbsp</em></a><a href="#"><img src="images/video2.jpg" alt=""><span>爱的初体验&nbsp223票</span><em>&nbsp</em></a><a href="#"><img src="images/video3.jpg" alt=""><span>爱的初体验&nbsp223票</span><em>&nbsp</em></a>
+							</div>
+						</div>	
+					</div>
+					<div class="common_footer">
+						<div class="common_footer_right"></div>
+					</div>
+				</div>
+				<div class="words">
+					<div class="common_head">
+						<div class="common_head_left">
+							<div class="common_head_right">
+								<h2><a href="###">歌词创作</a></h2>
+								<a href="#" class="more_">more</a>	
+							</div>
+						</div>
+					</div>
+					<div class="wrods_main">
+						<div class="words_main_song">
+							<p>当你在穿山越岭的另一边</p>
+							<p>我在孤独的路上没有尽头</p>
+							<p>一辈子有多少的来不及</p>
+							<p>发现已经失去</p>
+							<p>最重要的东西</p>
+							<p>恍然大悟早已远去</p>
+							<p>为何总是在犯错之后</p>
+							<span>......</span><em>查看全部</em>
+						</div>
+						<div class="words_main_song1">
+							<p>当你在穿山越岭的另一边</p>
+							<p>我在孤独的路上没有尽头</p>
+							<p>一辈子有多少的来不及</p>
+							<p>发现已经失去</p>
+							<p>最重要的东西</p>
+							<p>恍然大悟早已远去</p>
+							<p>为何总是在犯错之后</p>
+							<span>......</span><em>查看全部</em>
+						</div>
+					</div>
+					<div class="common_footer">
+						<div class="common_footer_right"></div>
+					</div>
+				</div>
+
+				<div class="photo">
+					<div class="common_head">
+						<div class="common_head_left">
+							<div class="common_head_right">
+								<h2><a href="###">相册</a></h2>
+								<a href="#" class="more_">more</a>	
+							</div>
+						</div>
+					</div>
+					<div class="photo_main">
+						<div class="photo_main_t">
+							<div class=" common_mian photo_portrait">
+								<a href="#"><img src="images/photo1.jpg" alt=""><span>爱的初体验&nbsp223票</span><em>&nbsp</em></a><a href="#"><img src="images/photo2.jpg" alt=""><span>爱的初体验&nbsp223票</span><em>&nbsp</em></a><a href="#"><img src="images/photo3.jpg" alt=""><span>爱的初体验&nbsp223票</span><em>&nbsp</em></a>
+							</div>
+						</div>	
+					</div>
+					<div class="common_footer">
+						<div class="common_footer_right"></div>
+					</div>
+
+				</div>
+				<div class="diary1">
+					<div class="common_head">
+						<div class="common_head_left">
+							<div class="common_head_right">
+								<h2><a href="###">心情日记</a></h2>
+								<a href="#" class="more_">more</a>	
+							</div>
+						</div>
+					</div>
+					<div class="diary">
+						<div class="diary_main">
+							<div class="title">
+								<span class="v1">标题</span><span class="v2">日期</span><span class="v3">票数</span>
+							</div>
+							<ul>
+								<li>
+									<span class="v1">我不知道什么是什么</span><span class="v2">2007.09.23</span><span class="v3">19票</span>
+								</li>
+								<li>
+									<span class="v1">我不知道什么是什么</span><span class="v2">2007.09.23</span><span class="v3">19票</span>
+								</li>
+								<li>
+									<span class="v1">我不知道什么是什么</span><span class="v2">2007.09.23</span><span class="v3">19票</span>
+								</li>
+								<li>
+									<span class="v1">我不知道什么是什么</span><span class="v2">2007.09.23</span><span class="v3">19票</span>
+								</li>
+								<li>
+									<span class="v1">我不知道什么是什么</span><span class="v2">2007.09.23</span><span class="v3">19票</span>
+								</li>
+								<li>
+									<span class="v1">我不知道什么是什么</span><span class="v2">2007.09.23</span><span class="v3">19票</span>
+								</li>
+								<li>
+									<span class="v1">我不知道什么是什么</span><span class="v2">2007.09.23</span><span class="v3">19票</span>
+								</li>
+								<li>
+									<span class="v1">我不知道什么是什么</span><span class="v2">2007.09.23</span><span class="v3">19票</span>
+								</li>
+							</ul>
+						</div>
+
+						<div class="common_footer">
+						<div class="common_footer_right"></div>
+						</div>
+					</div>
+					</div>
+				</div>
+		
+		
+			<div class="main_r">
+				<div class="visit">
+					<div class="common_head">
+						<div class="common_head_left">
+							<div class="common_head_right">
+								<h2><a href="###">访问记录</a></h2>
+
+							
+							</div>
+						</div>
+					</div>
+					<div class="visit_main">
+						<div class="visit_main_m">
+							<p class="visit_bg"><img src="images/visit_bg.jpg" alt="">好友数量<span>961</span></p>
+							<p class="visit_bg"><img src="images/visit_bg.jpg" alt="">累积投票<span>456789</span></p>
+							<p class="visit_bg"><img src="images/visit_bg.jpg" alt="">本日投票<span>250</span></p>
+							<p class="visit_bg"><img src="images/visit_bg.jpg" alt="">总访问量<span>1245564</span></p>
+							<p class="visit_bg"><img src="images/visit_bg.jpg" alt="">本日访问<span>1245782</span></p>
+						</div>
+					</div>
+					<div class="common_footer">
+						<div class="common_footer_right"></div>
+					</div>
+				</div>
+				<div class="message">
+					<div class="common_head">
+						<div class="common_head_left">
+							<div class="common_head_right">
+								<h2><a href="###">留言</a></h2>
+
+							
+							</div>
+						</div>
+					</div>
+					<div class="message_main">
+						<div class="message_main_m">
+							
+							<p class="under1">
+								<a href="#">
+									<span>二毛</span><em>&nbsp对&nbsp</em><span>文具</span><em>&nbsp说&nbsp</em>：我不知道你说了什么或者什么。。。
+								</a>
+								
+							</p>
+							<p class="under">
+								<a href="#"><span>二毛</span><em>&nbsp对&nbsp</em><span>文具</span><em>&nbsp说&nbsp</em>：我不知道你说了什么或者什么。。。</a></p>
+							<p class="under">
+								<a href="#"><span>二毛</span><em>&nbsp对&nbsp</em><span>文具</span><em>&nbsp说&nbsp</em>：我不知道你说了什么或者什么。。。</a></p>
+							<p class="under">
+								<a href="#"><span>二毛</span><em>&nbsp对&nbsp</em><span>文具</span><em>&nbsp说&nbsp</em>：我不知道你说了什么或者什么。。。</a></p>
+
+
+						</div>
+					</div>
+					<div class="common_footer">
+						<div class="common_footer_right"></div>
+					</div>
+				</div>
+				<div class="friend">
+					<div class="common_head">
+						<div class="common_head_left">
+							<div class="common_head_right">
+								<h2><a href="###">好友</a></h2>
+
+							
+							</div>
+						</div>
+					</div>
+					<div class="friend_main">
+						<div class="friend_main_m">
+							<div class="friend_main_m_1"><a href="#"><img src="images/friend_main.jpg" alt="">
+							<p>玩具熊的卡</p>
+							<span>这样一个人...</span></a></div>
+							<div class="friend_main_m_1"><a href="#"><img src="images/friend_main.jpg" alt="">
+							<p>玩具熊的卡</p>
+							<em>一辈子的朋友...</em></a></div>
+							<div class="friend_main_m_1"><a href="#"><img src="images/friend_main.jpg" alt="">
+							<p>玩具熊的卡</p>
+							<em>一辈子的朋友...</em></a></div>
+							<div class="friend_main_1 friend_main_m_1"><a href="#"><img src="images/friend_main.jpg" alt="">
+							<p>玩具熊的卡</p>
+							<em>一辈子的朋友...</em></a></div>
+						</div>
+					</div>
+					<div class="common_footer">
+						<div class="common_footer_right"></div>
+					</div>
+				</div>
+				<div class="idol">
+					<div class="common_head">
+						<div class="common_head_left">
+							<div class="common_head_right">
+								<h2><a href="###">偶像</a></h2>
+								<a href="###" class="more">more</a>		
+							</div>
+						</div>
+					</div>
+					<div class="common_main idol_main ">
+						<div class="idol_portrait">
+							<img src="images/idol.jpg" alt="">
+						</div>
+						<div class="idol_links">
+							<div><a href="#" class="idol_1"><em>&nbsp</em></a><span>阿姨</span><a href="#" id="idol_links_c"><em>&nbsp</em></a>
+							</div>
+						</div>
+					</div>
+					<div class="common_footer">
+						<div class="common_footer_right"></div>
+					</div>
+				</div>
+				</div>
+					
+				
+
+		</div>
+		<div class="footer">
+			<div class="foot">
+				<a href="#">新手上路</a>&nbsp|&nbsp<a href="#">关于我们</a>&nbsp|&nbsp<a href="#">服务条例</a>&nbsp|&nbsp<a href="#">服务公告</a>&nbsp|&nbsp<a href="#">行销合作</a>&nbsp|&nbsp<a href="#">广告刊登</a>&nbsp|&nbsp<a href="#">隐私政策</a>&nbsp|&nbsp<a href="#">客服中心</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
